@@ -1,0 +1,9 @@
+ros-$ROS_DISTRO-xacro
+
+python3-pip
+
+vim
+mlocate
+net-tools
+inetutils-ping
+iproute2

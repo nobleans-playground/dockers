@@ -1,0 +1,14 @@
+
+_source_script() {
+  if [ -f "$1" ]; then
+    . "$1"
+  else
+    echo "not found: \"$1\"" 1>&2
+  fi
+}
+
+_source_script /opt/ros/$ROS_DISTRO/setup.bash
+_source_script /workspace/install/setup.bash
+_source_script /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+_source_script /usr/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=/workspace
