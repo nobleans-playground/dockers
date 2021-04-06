@@ -11,3 +11,17 @@ services:
     environment:
       - DISPLAY=$DISPLAY
     tty: true
+  webots:
+    image: cyberbotics/webots
+    volumes:
+      - ./workspace:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=$DISPLAY
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+              - gpu
+    tty: true

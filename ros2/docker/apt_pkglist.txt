@@ -1,7 +1,11 @@
 ros-$ROS_DISTRO-xacro
 
+software-properties-common
+libxtst6
+
 python3-pip
 
+wget
 vim
 mlocate
 net-tools

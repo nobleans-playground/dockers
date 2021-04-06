@@ -12,3 +12,7 @@ _source_script /workspace/install/setup.bash
 _source_script /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 _source_script /usr/share/colcon_cd/function/colcon_cd.sh
 export _colcon_cd_root=/workspace
+
+export WEBOTS_HOME="/usr/local/webots/"
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${WEBOTS_HOME}/lib/controller
+export PYTHONPATH=${PYTHONPATH}:${WEBOTS_HOME}/lib/controller/python38
